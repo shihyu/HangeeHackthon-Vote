@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .videoarea
+    video#video-background(autoplay='', loop='', poster='', muted='')
+          source(src='https://d3mlfyygrfdi2i.cloudfront.net/cc51/au-nz-4eva.mp4', type='video/mp4')
+  .container
+    .video
+    .wrap
+      .row
+        .layer.dot-overlay
+        .col-lg-12
+
+          h1.page-header
+            | Hackathon Taiwan 作品
+            br
+            small 請投下您神聖的票
+             button#submitVotebanner.btn.btn-primary.tab(onclick="") 開始投票
+      - for (var i = 0; i < data.length; i++)
+        - if( i %4 == 0 )
+          .row
+        label.col-md-3.portfolio-item.team-box(for="slideOne"+i)
+          input(type="checkbox" value="None" id="slideOne"+i name="check"  data-id="#{data[i]._id}")
+          label.checkbox(for="slideOne"+i)
+            i.glyphicon.glyphicon-thumbs-up.up
+          a
+            - if( data[i].imgURL )
+              img.img-responsive(src= data[i].imgURL, alt='')
+            - else
+              img.img-responsive(src='https://hackathon.tw/img/study.jpg', alt='')
+          .works-info.text-center
+            span= data[i].name
+            br
+            span= data[i].projectName

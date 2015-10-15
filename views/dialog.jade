@@ -1,0 +1,33 @@
+.modal.fade.bs-example-modal-lg(tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true")
+  .modal-dialog.modal-lg
+    form#creatTeam.modal-content(action="/createTeam" method="post" enctype="multipart/form-data")
+      .modal-header
+        botton.close(type="button" aria-label="Close" data-dismiss="modal")
+          span(aria-hidden="true") &times;
+        h4.modal-title
+          | 建立隊伍
+      .modal-body
+
+        .form-group.col-md-6
+          label(for="teamName") TEAM NAME
+          input.form-control(name="name" type="text" placeholder="TEAM NAME")
+        .form-group.col-md-6
+          label(for="projectName") PROJECT NAME
+          input.form-control(name="projectName" type="text" placeholder="PROJECT NAME")
+        .form-group.col-md-12
+          label(for="imgURL") TEAM PICTURE
+          input(type="file" name="imgURL")
+        .form-group.col-md-12
+          label TEAM MEMBER
+        - for( x = 1; x<=4; x++ )
+          .member
+            .form-group.col-md-6.col-xs-6
+              input.form-control(name="name#{x}" type="text" placeholder="NAME#{x}")
+            .form-group.col-md-6.col-xs-6
+              input.form-control(name="phone#{x}" type="text" placeholder="PHONE#{x}")
+        input(type="hidden" name="memberCount" value="#{x}")
+        .clearfix
+      .modal-footer
+        button.btn.btn-default(type="button" data-dismiss="modal")
+          | 關閉
+        button.btn.btn-primary(type="submit") 建立完成

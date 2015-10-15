@@ -1,0 +1,6 @@
+npm-debug.log
+bower_components/
+node_modules/
+.tmp
+.DS_Store
+public/images/teamPic/

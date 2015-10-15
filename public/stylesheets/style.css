@@ -1,0 +1,295 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.portfolio-item {
+  margin-bottom: 25px;
+}
+.works-info{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  position: relative;
+  margin: -55px 3px 0 2px;
+  height: 52px;
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+  color: #fff;
+}
+.works-info span:first-child{
+  color: yellow;
+  font-size: 20px;
+}
+.checkbox{
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  margin: 0;
+}
+.team-box{
+  position: relative;
+  cursor: pointer;
+}
+.team-box img{
+  border: 3px solid rgba(255,255,255,0);
+  transition: all .2s linear;
+  border-radius: 10px;
+  box-shadow: 0px 0 0px #f5f5f5, 0 0 1px #f5f5f5, 1px 0 0px #f5f5f5, 0 5px 21px #C3C3C3;
+  width: 255px;
+  height: 170px;
+}
+.team-box img:hover{
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked + label i.glyphicon-thumbs-up{
+  background:#d95347;
+  color:#fff;
+  cursor:pointer;
+}
+input[type=checkbox]:checked + label + a img{
+  border: 3px solid #d95347;
+}
+.up:hover{
+  background:#d95347;
+  color:#fff;
+  cursor:pointer;
+}
+.up{
+  border-radius: 10px;
+  color: rgba(255,255,255,0.5);
+  float: left;
+  font-size: 35px;
+  height: 100%;
+  line-height: 45px;
+  text-align: center;
+  transition: all .2s linear;
+  width: 45px;
+}
+.tab{
+  margin-right: 5px;
+}
+/*.wrap {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}*/
+.wrap .full {
+  -moz-transform: translate3d(-17%, -15%, 0);
+  -webkit-transform: translate3d(-17%, -15%, 0);
+  transform: translate3d(-17%, -15%, 0);
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-filter: brightness(0.5) grayscale(0.7) blur(2px);
+}
+.dot-overlay {
+  background-image: url(../images/dot.png) ;
+  height:500px;
+}
+.layer {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.page-header{
+  margin:100px 0 20px;
+}
+h1.page-header{
+  color:#fff;
+  font-size:500%;
+  padding:50px;
+  text-shadow: 3px 3px 3px rgba(24, 15, 15, 0.5);
+  position: absolute;
+  top: 0;
+}
+h1.page-header small{
+  color:#EDEF95;
+}
+nav.gag-nav.navbar.navbar-inverse.navbar-fixed-top.dark-blue {
+  color: #fff;
+  background-color: #203349;
+  border-color: #576676;
+}
+
+.container{
+  /*background-color: red;*/
+}
+
+/*result*/
+#main{
+  width:100%;
+  height:400px;
+  margin:100px 0;
+}
+
+footer{
+  background-color: #333;
+  position: fixed;
+  top: calc(100% - 60px);
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  left: 0px;
+  color: white;
+
+}
+#submitVotebanner{
+background-image: -webkit-linear-gradient(top,#d95347 0,#d95347 100%);
+background-image: -o-linear-gradient(top,#d95347 0,#d95347 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#d95347),to(#d95347));
+background-image: linear-gradient(to bottom,#d95347 0,#d95347 100%);
+-webkit-appearance: none;
+text-decoration: none !important;
+cursor: pointer;
+display: inline-block;
+border: none;
+white-space: nowrap;
+letter-spacing: normal;
+text-align: center;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-left:20px;
+background-color: #d95347!important;
+color: #fff;
+}
+.row > .col-lg-12{
+  position: absolute;
+  top: 0;
+}
+
+.navbar-inverse {
+  background-image: -webkit-linear-gradient(top,#203349 0,#203349 100%);
+  background-image: -o-linear-gradient(top,#203349 0,#203349 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#203349),to(#203349));
+  background-image: linear-gradient(to bottom,#203349 0,#203349 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+}
+.navbar-brand{
+  color:#fff!important;
+}
+.video-background{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+video#video-background{
+  width: 100%;
+  min-width:470px;
+}
+.videoarea{
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+}
+@media (min-width:250px) and (max-width: 480px) {
+  .videoarea{
+  height:250px!important;
+  }
+  .dot-overlay {
+  background-image: url(../images/dot.png) ;
+  height:250px!important;
+  }
+  h1.page-header{
+  color:#fff;
+  font-size:30px;
+  margin-top: 40px
+  padding:0px;
+  text-shadow: 3px 3px 3px rgba(24, 15, 15, 0.5);
+  position: absolute;
+  top: 0;
+  }
+  .page-header{
+  margin:10px 0 0px;
+  }
+}
+@media (min-width: 582) and (max-width: 660px){
+  .dot-overlay {
+  background-image: url(../images/dot.png) ;
+  height:330px!important;
+  }
+  .dot-overlay {
+  background-image: url(../images/dot.png) ;
+  height:300px;
+  }
+}
+@media (min-width: 482px) and (max-width: 767px){
+  .videoarea{
+  height:360px;
+  }
+  .dot-overlay {
+  background-image: url(../images/dot.png) ;
+  height:360px;
+  }
+  h1.page-header{
+  color:#fff;
+  font-size:30px;
+  margin-top: 40px
+  padding:0px;
+  text-shadow: 3px 3px 3px rgba(24, 15, 15, 0.5);
+  position: absolute;
+  top: 0;
+  }
+  .page-header{
+  margin:10px 0 0px;
+  }
+}
+@media (min-width: 768px)and (max-width:991px) {
+   h1.page-header{
+  color:#fff;
+  font-size:70px;
+  margin-top: 40px
+  padding:0px;
+  text-shadow: 3px 3px 3px rgba(24, 15, 15, 0.5);
+  position: absolute;
+  top: 0;
+  }
+  .page-header{
+  margin:10px 0 0px;
+  }
+  .dot-overlay {
+  background-image: url(../images/dot.png) ;
+  height:450px;
+  }
+}
+@media (min-width: 992px)and (max-width:1199px) {
+
+   h1.page-header{
+  color:#fff;
+  font-size:80px;
+  margin-top: 40px
+  padding:0px;
+  text-shadow: 3px 3px 3px rgba(24, 15, 15, 0.5);
+  position: absolute;
+  top: 0;
+  }
+  .page-header{
+  margin:10px 0 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}

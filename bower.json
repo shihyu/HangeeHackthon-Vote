@@ -1,0 +1,19 @@
+{
+  "name": "vote",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hey-hackthon/vote",
+  "authors": [
+    "webber_wu <webber_wu@hiiir.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
